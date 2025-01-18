@@ -60,11 +60,11 @@ Key features of this project include:
 
 2. Install dependencies:
    ```bash
-pip install -r requirements.txt
+   pip install -r requirements.txt
 
 3. (Optional) Install the package locally using pip:
   ```bash
-pip install -e .
+   pip install -e .
 
 ## Running the Pipeline
 
@@ -98,9 +98,25 @@ Testing the Training Pipeline:
 
 pytest tests/test_training.py
 Testing the Prediction Pipeline:
-bash
-Copy
+
 pytest tests/test_prediction.py
-sql
-Copy
+
+###  Setting up the Project Structure
+To create the necessary project structure, run the init_setup.sh script. This will create all the required directories and files for the project.
+
+Make the script executable:
+
+```bash
+chmod +x init_setup.sh
+Run the script:
+```bash
+./init_setup.sh
+
+This will:
+
+Create the project directory structure.
+Initialize files like requirements.txt, setup.py, and src components.
+
+
+
 
