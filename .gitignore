@@ -8,6 +8,8 @@ artifacts/
 mlruns/
 logs/
 
+gemstone_price_prediction.egg-info/
+
 # Ignore Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
