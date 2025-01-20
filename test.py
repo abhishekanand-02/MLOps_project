@@ -1,5 +1,5 @@
 import pandas as pd
-
+import os
 
 Data=[
     {"name":"Abhishek","age":23,"city":"Bhopal"},
@@ -10,4 +10,8 @@ Data=[
 
 df  = pd.DataFrame(Data)
 
-df.to_csv("data/data.csv", index = False)
+if not os.path.exists("data"):
+    os.makedirs("data")
+
+# Save the DataFrame to a CSV file
+df.to_csv("data/data.csv", index=False)
