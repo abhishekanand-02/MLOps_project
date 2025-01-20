@@ -4,7 +4,8 @@ import os
 Data=[
     {"name":"Abhishek","age":23,"city":"Bhopal"},
     {"name":"Nishal","age":24,"city":"Pune"},
-    {"name":"Joheb","age":34,"city":"Hyderabad"}
+    {"name":"Joheb","age":34,"city":"Hyderabad"},
+    {"name":"Naveen","age":36,"city":"Hyderabad"}
 
 ]
 
