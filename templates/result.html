@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .result-container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .result-container h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .result-container p {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 36px;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        .btn-container {
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: #4CAF50; /* Green background for the button */
+            color: white; /* White text color */
+            font-size: 18px; /* Font size */
+            padding: 12px 24px; /* Padding inside the button */
+            border: none; /* No border */
+            border-radius: 4px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            text-decoration: none; /* Remove underline from link */
+            display: inline-block; /* Make the link behave like a button */
+        }
+
+        .btn:hover {
+            background-color: #45a049; /* Darker green when hovering */
+        }
+
+        .btn-secondary {
+            background-color: #f44336; /* Red background for the edit button */
+            color: white; /* White text color */
+        }
+
+        .btn-secondary:hover {
+            background-color: #e53935; /* Darker red when hovering */
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Prediction Result</h1>
+        <p>Predicted Price of the Diamond:</p>
+        <p class="price">$ {{ final_result }}</p>
+        
+        <!-- Button to navigate back to home -->
+        <div class="btn-container">
+            <a href="/" class="btn">Go back to Home Page</a>
+        </div>
+
+        <!-- Button to navigate back to the prediction form -->
+        <div class="btn-container">
+            <a href="/predict" class="btn btn-secondary">Edit Details</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Predicted Price of the Diamond: ${{ final_result }}</h1>
+    <a href="/">Go back to home page</a>
+</body>
+</html> -->

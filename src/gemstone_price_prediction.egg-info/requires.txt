@@ -1,0 +1,12 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+flask
+
+[dev]
+pytest
+black
+flake8
+tox

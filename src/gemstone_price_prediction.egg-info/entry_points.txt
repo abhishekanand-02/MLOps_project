@@ -1,0 +1,2 @@
+[console_scripts]
+gemstone_price_prediction = src.pipelines.training_pipeline:main

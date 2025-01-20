@@ -1,0 +1,26 @@
+# Ignore Python environment
+env/
+
+# Ignore build artifacts
+build/
+dist/
+artifacts/
+mlruns/
+logs/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore configuration files
+*.pyc
+__pycache__/
+*.pyo
+
+# Ignore IDE specific files (if applicable)
+.vscode/
+.idea/
+*.swp
+
+# Ignore other unnecessary files
+*.log
+

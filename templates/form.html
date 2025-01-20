@@ -1,0 +1,155 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Form</title>
+</head>
+<body>
+    <h1>Enter Diamond Details for Prediction</h1>
+    <form method="POST">
+        <label for="carat">Carat:</label>
+        <input type="text" id="carat" name="carat" required><br><br>
+
+        <label for="depth">Depth:</label>
+        <input type="text" id="depth" name="depth" required><br><br>
+
+        <label for="table">Table:</label>
+        <input type="text" id="table" name="table" required><br><br>
+
+        <label for="x">X:</label>
+        <input type="text" id="x" name="x" required><br><br>
+
+        <label for="y">Y:</label>
+        <input type="text" id="y" name="y" required><br><br>
+
+        <label for="z">Z:</label>
+        <input type="text" id="z" name="z" required><br><br>
+
+        <label for="cut">Cut:</label>
+        <input type="text" id="cut" name="cut" required><br><br>
+
+        <label for="color">Color:</label>
+        <input type="text" id="color" name="color" required><br><br>
+
+        <label for="clarity">Clarity:</label>
+        <input type="text" id="clarity" name="clarity" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict Diamond Price</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            padding-top: 20px;
+        }
+
+        .form-container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container label {
+            font-size: 16px;
+            color: #333;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .form-container input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .form-container p {
+            color: red;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .form-container h3 {
+            text-align: center;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter Diamond Details</h1>
+    <div class="form-container">
+        <form method="POST" action="/predict">
+            <label for="carat">Carat (float, e.g., 1.52): </label>
+            <input type="text" name="carat" id="carat" required><br>
+
+            <label for="cut">Cut (string, e.g., 'Premium', 'Ideal'): </label>
+            <input type="text" name="cut" id="cut" required><br>
+
+            <label for="color">Color (string, e.g., 'F', 'G'): </label>
+            <input type="text" name="color" id="color" required><br>
+
+            <label for="clarity">Clarity (string, e.g., 'VS2', 'SI2'): </label>
+            <input type="text" name="clarity" id="clarity" required><br>
+
+            <label for="depth">Depth (float, e.g., 62.2): </label>
+            <input type="text" name="depth" id="depth" required><br>
+
+            <label for="table">Table (float, e.g., 58): </label>
+            <input type="text" name="table" id="table" required><br>
+
+            <label for="x">X (float, e.g., 7.27): </label>
+            <input type="text" name="x" id="x" required><br>
+
+            <label for="y">Y (float, e.g., 7.33): </label>
+            <input type="text" name="y" id="y" required><br>
+
+            <label for="z">Z (float, e.g., 4.55): </label>
+            <input type="text" name="z" id="z" required><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <!-- Display error message if present -->
+        {% if error %}
+            <p>{{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

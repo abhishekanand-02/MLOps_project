@@ -1,0 +1,52 @@
+#!/bin/bash
+
+echo [$(date)]: "START"
+
+# Creating project folder structure
+echo [$(date)]: "Creating directory structure"
+
+# List of file paths to be created
+list_of_files=(
+    "github/workflows/.gitkeep"
+    "src/__init__.py"
+    "src/components/__init__.py"
+    "src/components/data_ingestion.py"
+    "src/components/data_transformation.py"
+    "src/components/model_trainer.py"
+    "src/pipelines/__init__.py"
+    "src/pipelines/training_pipeline.py"
+    "src/pipelines/prediction_pipeline.py"
+    "src/logger.py"
+    "src/exception.py"
+    "src/utils/utils.py"
+    "src/utils/__init__.py"
+    "notebooks/research.ipynb"
+    "notebooks/data/.gitkeep"
+    "requirements.txt"
+    "requirements_dev.txt"
+    "setup.py"
+    "setup.cfg"
+    "init_setup.sh"
+    "pyproject.toml"
+    "tox.ini"
+    "experiment/experiments.ipynb"
+)
+
+# Creating directories and files
+for filepath in "${list_of_files[@]}"; do
+    filedir=$(dirname "$filepath")
+    filename=$(basename "$filepath")
+
+    # Create directory if it doesn't exist
+    if [[ "$filedir" != "." ]]; then
+        mkdir -p "$filedir"
+    fi
+
+    # Create an empty file if it doesn't exist or is empty
+    if [[ ! -f "$filepath" || ! -s "$filepath" ]]; then
+        touch "$filepath"
+    fi
+done
+
+echo [$(date)]: "Project structure created successfully"
+echo [$(date)]: "END"
