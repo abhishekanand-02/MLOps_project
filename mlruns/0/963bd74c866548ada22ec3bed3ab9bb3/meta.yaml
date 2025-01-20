@@ -1,0 +1,15 @@
+artifact_uri: file:///home/abhishek.anand/Desktop/Practise_tools/mlruns/0/963bd74c866548ada22ec3bed3ab9bb3/artifacts
+end_time: 1737366425854
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 963bd74c866548ada22ec3bed3ab9bb3
+run_name: skillful-kite-311
+run_uuid: 963bd74c866548ada22ec3bed3ab9bb3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737366425845
+status: 3
+tags: []
+user_id: abhishek.anand

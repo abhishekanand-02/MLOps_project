@@ -1,0 +1,15 @@
+artifact_uri: file:///home/abhishek.anand/Desktop/Practise_tools/mlruns/0/1913b41d7e5a488eaebe5a11c3205655/artifacts
+end_time: 1737366353216
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1913b41d7e5a488eaebe5a11c3205655
+run_name: handsome-donkey-767
+run_uuid: 1913b41d7e5a488eaebe5a11c3205655
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737366353207
+status: 3
+tags: []
+user_id: abhishek.anand

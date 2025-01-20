@@ -1,0 +1,15 @@
+artifact_uri: file:///home/abhishek.anand/Desktop/Practise_tools/mlruns/0/1fc11504e07642858c36f109a0272dfa/artifacts
+end_time: 1737367266077
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1fc11504e07642858c36f109a0272dfa
+run_name: nosy-auk-785
+run_uuid: 1fc11504e07642858c36f109a0272dfa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737367266064
+status: 3
+tags: []
+user_id: abhishek.anand
