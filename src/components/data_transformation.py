@@ -44,7 +44,7 @@ class DataTransformation:
                     ('imputer', SimpleImputer(strategy='median')),
                     ('scaler', StandardScaler())
                 ]
-            )
+            )# SimpleImputer: This class is used to handle missing values in the dataset.
 
             # Categorical Pipeline
             cat_pipeline = Pipeline(

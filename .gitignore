@@ -26,3 +26,9 @@ __pycache__/
 # Ignore other unnecessary files
 *.log
 
+
+.dvc/.gitignore
+.dvc/config
+.dvcignore
+
+
